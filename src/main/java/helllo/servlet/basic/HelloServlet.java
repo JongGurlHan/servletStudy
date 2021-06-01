@@ -21,8 +21,9 @@ public class HelloServlet extends HttpServlet {
         System.out.println("username = " + username);
 
         response.setContentType("text/plain");
-        response.setContentType("utf-8");
-        response.getWriter().write("hello"+ username);
+        response.setCharacterEncoding("utf-8");   //요 두개는 헤더 정보로 들어간다
+
+        response.getWriter().write("hello "+ username);
 
 
     }
