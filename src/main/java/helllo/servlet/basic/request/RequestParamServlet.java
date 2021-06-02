@@ -27,7 +27,7 @@ public class RequestParamServlet extends HttpServlet {
 
         System.out.println("[단일 파라미터 조회]");
         String username = request.getParameter("username");
-        String age = request.getParameter("age");
+        String age = request.getParameter("age"); //get, post방식의 파라미터 모두 꺼내올 수 있다!
 
         System.out.println("username = " + username);
         System.out.println("age = " + age);
