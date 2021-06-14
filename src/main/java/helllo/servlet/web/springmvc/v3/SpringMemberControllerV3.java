@@ -24,7 +24,7 @@ public class SpringMemberControllerV3 {
     //@RequestMapping(value = "/save", method = RequestMethod.POST)
     @PostMapping("/save")
     public String save(
-            @RequestParam("username") String username,
+            @RequestParam("username") String username, //request.getParameter("usuername")과 같다. / get, post 둘다지원
             @RequestParam("age") int age,
             Model model) {
 
